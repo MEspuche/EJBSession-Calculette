@@ -29,7 +29,15 @@ public class Calculatrice implements CalculatriceRemote, CalculatriceLocal {
 
 	@Override
 	public int division(int x, int y) {
+		if(y!=0)
+		{
 		return x/y;
+		}
+		else
+		{
+			System.out.println("division par 0 impossible");
+			return 0;
+		}
 	}
 
 	@Override
