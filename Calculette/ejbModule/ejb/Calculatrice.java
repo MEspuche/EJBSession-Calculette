@@ -1,13 +1,12 @@
 package ejb;
 
-import javax.ejb.LocalBean;
 import javax.ejb.Stateless;
 
 /**
  * Session Bean implementation class Calculatrice
  */
 @Stateless
-@LocalBean
+// @LocalBean necessaire si il n'y a pas d'interface local et remote
 public class Calculatrice implements CalculatriceRemote, CalculatriceLocal {
 
     /**
